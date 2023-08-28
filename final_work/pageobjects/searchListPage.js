@@ -5,7 +5,6 @@ class SearchListPage extends BasePage {
   constructor() {
     super();
     this.searchListItem = '.breadcrumbs__list__li.active';
-    this.searchResults = '.viewer-type-card__li';
     this.searchListPrices = '.item-type-card__btn';
     this.filterSearchByPriceStart = '#inp1_r_cost';
     this.filterSearchByPriceFinish = '#inp2_r_cost';
