@@ -2,8 +2,6 @@ const axios = require('axios');
 const validator = require('jsonschema');
 const addCartSchema = require('./data/oz.by.api-v-1.json');
 
-//const validator = new Validator();
-
 describe('API tests oz.by', () => {
   let response;
   before(async () => {
