@@ -1,7 +1,5 @@
 const { BasePage } = require('../basepage');
-const { BaseElement } = require('../../helpers/baseelement');
-
-const baseElement = new BaseElement();
+const baseElement = require('../../helpers/baseelement');
 
 class Header extends BasePage {
   constructor() {

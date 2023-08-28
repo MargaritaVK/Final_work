@@ -1,8 +1,5 @@
-const { BaseElement }  = require('../helpers/baseelement');
-const { PageFactory } = require('../pageobjects/pageFactory');
-
-const baseElement = new BaseElement();
-const pageFactory = new PageFactory ();
+const baseElement  = require('../helpers/baseelement');
+const pageFactory  = require('../pageobjects/pageFactory');
 
 describe('Login and functionality check on personal page', () => {
   it('Check that the login on the page is carried out with the correct data', async () => {

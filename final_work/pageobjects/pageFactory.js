@@ -22,4 +22,4 @@ class PageFactory {
   }
 }
 
-module.exports = { PageFactory };
+module.exports = new PageFactory ();

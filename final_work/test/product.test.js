@@ -1,8 +1,5 @@
-const { BaseElement }  = require('../helpers/baseelement');
-const { PageFactory } = require('../pageobjects/pageFactory');
-
-const baseElement = new BaseElement();
-const pageFactory = new PageFactory ();
+const baseElement  = require('../helpers/baseelement');
+const pageFactory  = require('../pageobjects/pageFactory');
 
 describe('Functionality check on product page', () => {
   before(async () => {

@@ -1,9 +1,6 @@
-const { BaseElement }  = require('../helpers/baseelement');
-const { PageFactory } = require('../pageobjects/pageFactory');
+const baseElement  = require('../helpers/baseelement');
+const pageFactory  = require('../pageobjects/pageFactory');
 const { Help } = require('../helpers/helpers');
-
-const baseElement = new BaseElement();
-const pageFactory = new PageFactory ();
 
 describe('Functionality check on search page', () => {
   it('Check that the first search result contains "тармашев"', async () => {
