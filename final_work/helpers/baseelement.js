@@ -35,11 +35,6 @@ class BaseElement {
     await $(selector).moveTo();
     await $(selectorDrop).waitForDisplayed();
   }
-
-  async scrollTo(selector) {
-    await $(selector).scrollIntoView();
-    await $(selector).waitForDisplayed();
-  }
 }
 
 module.exports = new BaseElement();

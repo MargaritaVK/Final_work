@@ -20,6 +20,11 @@ describe('Functionality check on product page', () => {
     expect(pageTitle).toContain(productName);
   });
 
+  it('Check that image is visible in product description', async () => {
+    const elementImage = await $(pageFactory.productPage.productImage).isDisplayed();
+    expect(elementImage).toBe(true);
+  });
+
   it('Check that product is added to cart and the button is change description', async () => {
     await pageFactory.productPage.addProductToCart();
     const elementText = await baseElement.getElementText(pageFactory.productPage.afterAddButton);

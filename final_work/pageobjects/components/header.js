@@ -10,7 +10,6 @@ class Header extends BasePage {
     this.dropDownMenu = '#mobile-userbar.top-panel__userbar__ppnav';
     this.dropDownOrders = '//*[span="Заказы"]';
     this.cart = 'a.top-panel__userbar__cart__item';
-    this.logo = '.top-panel__logo';
   }
 
   async search(searchText) {

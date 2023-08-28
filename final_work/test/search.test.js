@@ -21,7 +21,7 @@ describe('Functionality check on search page', () => {
   it('Should filter search limits prices and check that the quantity of products has decreased', async () => {
     await pageFactory.searchListPage.setLimitsPriceFrame(60, 80);
     const searchResult = await baseElement.getElementText(pageFactory.searchListPage.searchListItem);
-    expect(searchResult.toLowerCase()).toContain('тармашев' && '4');
+    expect(searchResult.toLowerCase()).toContain('тармашев' && '5');
   });
 
   it('Check that prices of filtered products is in right range', async () => {

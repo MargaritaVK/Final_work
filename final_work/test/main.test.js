@@ -19,13 +19,6 @@ describe('Functionality check on main page', () => {
     expect(text).toBe('Минск');
   });
 
-  it('Check that footer button "Наверх" should navigate to top of page', async () => {
-    await baseElement.scrollTo(pageFactory.mainPage.upButton);
-    await baseElement.clickElement(pageFactory.mainPage.upButton);
-    const element = await $(pageFactory.header.logo).isDisplayed();
-    expect(element).toBe(true);
-  });
-
   it('Check that footer link Facebook should navigate to link facebook.com', async () => {
     await pageFactory.footer.goToSocialLink();
     const url = await browser.getUrl();

@@ -5,6 +5,7 @@ class ProductPage extends BasePage {
   constructor() {
     super();
     this.productTitle = '.b-product-title';
+    this.productImage = '//*[contains(@class,"picture")]//*[@data-size="380x575"]//img';
     this.productName = '.b-product-title h1';
     this.addToCartButton = '.addtocart-btn';
     this.afterAddButton = '.second-button';
