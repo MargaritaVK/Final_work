@@ -4,12 +4,16 @@ const baseElement = require('../../helpers/baseelement');
 class Footer extends BasePage {
   constructor() {
     super();
-    this.socialLinkFacebook = "//*[@class='footer-full__social-list']/a[3]";
+    this.SocialLink = async (socialLinkName) => {
+      return `//a[@class = "footer-full__social-link" and contains(@href,"${socialLinkName}")]`;
+  };
   }
 
-  async goToSocialLink() {
-    await baseElement.clickElement(this.socialLinkFacebook);
-    await browser.switchWindow('https://www.facebook.com/www.oz.by/wall/');
+  async goToSocialLink(socialLinkName) {
+    const socialLink = await this.SocialLink(socialLinkName);
+    await baseElement.clickElement(socialLink);
+    const externalLink = await baseElement.getLink(socialLink, 'href');
+    await browser.switchWindow(externalLink);
   }
 }
 

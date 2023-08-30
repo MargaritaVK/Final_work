@@ -24,7 +24,7 @@ describe('Functionality check on search page', () => {
     expect(searchResult.toLowerCase()).toContain('тармашев' && '5');
   });
 
-  it('Check that prices of filtered products is in right range', async () => {
+  it('Check that prices of filtered products are in right range', async () => {
     const searchPrices = await Help.getPriceWithoutCurrencySymbols(pageFactory.searchListPage.searchListPrices);
     const checkResult = await Help.isDataInTheGivenRange(searchPrices, 60, 80);
     expect(checkResult).toBe(true);

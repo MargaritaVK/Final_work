@@ -20,7 +20,7 @@ describe('Functionality check on main page', () => {
   });
 
   it('Check that footer link Facebook should navigate to link facebook.com', async () => {
-    await pageFactory.footer.goToSocialLink();
+    await pageFactory.footer.goToSocialLink('facebook');
     const url = await browser.getUrl();
     expect(url).toContain('facebook.com');
   });

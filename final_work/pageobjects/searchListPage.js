@@ -10,7 +10,7 @@ class SearchListPage extends BasePage {
     this.filterSearchByPriceFinish = '#inp2_r_cost';
     this.filterButtom = '.filters__searchbtn__btn';
     this.sorting = '.top-filters__eselect.top-filters__eselect_alltypes';
-    this.sortingPriceDesc = '.top-filters__eselect.top-filters__eselect_alltypes li:nth-child(4)';
+    this.sortingPriceDesc = '//*[@id="top_filters__sorter"]/li[4]';
   }
 
   async setLimitsPriceFrame(minPrice, maxPrice) {

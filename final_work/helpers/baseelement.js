@@ -31,6 +31,10 @@ class BaseElement {
     return $(selector).getCSSProperty(property);
   }
 
+  async getLink (selector, property) {
+    return $(selector).getProperty(property);
+  }
+
   async getDropDown(selector, selectorDrop) {
     await $(selector).moveTo();
     await $(selectorDrop).waitForDisplayed();
