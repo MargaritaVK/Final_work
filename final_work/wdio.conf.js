@@ -38,8 +38,6 @@ exports.config = {
     framework: 'mocha',
     reporters: ['spec', ['allure', {
         outputDir: 'allure-results',
-        disableWebdriverStepsReporting: false,
-        disableWebdriverScreenshotsReporting: false,
         disableMochaHooks: true,
     }]],
     
