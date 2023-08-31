@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "allure": "npx allure generate  reports/allure-results -o reports/allure-report"
+    "allure": "npx allure generate  reports/allure-results -o reports/allure-report",
+    "lint": "npx eslint --fix ./test"
   },
   "author": "Margarita Makarova",
   "license": "ISC",
