@@ -1,0 +1,32 @@
+{
+  "name": "final_work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js",
+    "allure": "npx allure generate  reports/allure-results -o reports/allure-report",
+    "lint": "npx eslint --fix ./test"
+  },
+  "author": "Margarita Makarova",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.15.0",
+    "@wdio/cli": "^8.15.5",
+    "@wdio/local-runner": "^8.15.4",
+    "@wdio/mocha-framework": "^8.15.4",
+    "@wdio/spec-reporter": "^8.15.10",
+    "allure-commandline": "^2.23.1",
+    "chromedriver": "^114.0.3",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "wdio-chromedriver-service": "^8.1.1",
+    "wdio-wait-for": "^3.0.6"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chai": "^4.3.7",
+    "jsonschema": "^1.4.1"
+  }
+}
